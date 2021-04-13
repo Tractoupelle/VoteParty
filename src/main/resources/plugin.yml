@@ -1,0 +1,11 @@
+name: VoteParty
+version: ${project.version}
+description: Public VoteParty plugin.
+author: Tractopelle
+
+main: fr.tractopelle.voteparty.CorePlugin
+
+commands:
+  voteparty:
+    aliases: [vp]
+    description: Main command.

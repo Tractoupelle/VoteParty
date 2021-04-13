@@ -1,0 +1,46 @@
+#############################################################
+#  Default configuration for VoteParty by Tractopelle#4020  #
+#############################################################
+
+PREFIX: "§6VoteParty §f» §e"
+
+VOTE-PARTY-MAX: 100
+
+USAGE: "Usage: /voteparty info"
+USAGE-ADMIN:
+  - "§6VoteParty §f» §e"
+  - "§e/voteparty info : §7See current VoteParty"
+  - "§e/voteparty add <value> : §7Add value to VoteParty"
+  - "§e/voteparty remove <value> : §7Add value to VoteParty"
+NO-PERMISSION: "You don't have the permission."
+NOT-PLAYER: "Only player can execute this command."
+INFO-VOTE: "The VoteParty is §6%current%§e/§6%currentmax%§6 votes."
+ADD-VOTE: "You have added %value% votes from the VoteParty."
+REMOVE-VOTE: "You removed %value% votes from the VoteParty."
+RESET-VOTE: "You have reset the VoteParty."
+
+VOTE-PARTY-REACHED-TYPE:
+  - CHAT
+  - TITLE
+  - ACTIOBAR
+
+VOTE-PARTY-REACHED-TITLE:
+  TITLE: "§e§k ::§6§l VOTEPARTY §e§k::"
+  SUBTITLE: "§e§l+100 000"
+  FADE-IN: 10
+  STAY: 30
+  FADE-OUT: 10
+
+VOTE-PARTY-REACHED-CHAT:
+  MESSAGE:
+    - ""
+    - " §eVote party atteint §6+100k"
+    - ""
+
+VOTE-PARTY-REACHED-ACTIONBAR:
+  MESSAGE: "§eVote party atteint §6+100 000"
+
+VOTE-PARTY-REACHED-COMMAND:
+  - eco give %player% 100000
+  - give %player% diamond 5
+
